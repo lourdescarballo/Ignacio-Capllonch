@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@200;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+
+/**RESET****************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: black;
+}
+
+/**HEADER****************************/
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(228, 255, 26);
+    padding: 0 10px 0 10px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: rgb(228, 255, 26);
+}
+
+
+/**MAIN****************************/
+
+.hero {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.hero h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 70px;
+}
+
+.hero p {
+    color: rgb(241, 143, 1);
+    font-size: 40px;
+}
+
+.hero a {
+    text-decoration: none;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+.hero a:hover {
+    opacity: 0.9;
+    color: black;
+}
+
+/**Banner Stats****************************/
+
+.stats {
+    background-color: black;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.stats h2 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats div {
+    font-family: 'Teko', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stats div span {
+    font-size: 70px;
+    color: rgb(228, 255, 26);
+    font-family: 'Teko', sans-serif;
+}
+
+/**About me section index****************************/
+
+.about {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    text-align: left;
+}
+
+.about img {
+    height: 500px;
+    padding-right: 15px;
+}
+
+
+.about div h2 {
+    font-size: 50px;
+}
+
+.about div p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.about a {
+    text-decoration: none;
+    background-color: black;
+    color: rgb(228, 255, 26);
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+}
+
+.about a:hover {
+    opacity: 0.7;
+}
+
+/**About me document*************/
+
+.container-fluid div h2 {
+    color: rgb(228, 255, 26);
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+}
+
+/**Gallery document******************/
+
+.grid-galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 450px;
+    gap: 5px;
+}
+
+.grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-5 {
+    grid-column: span 2;
+}
+
+/**Banner****************************/
+
+.banner {
+    background-color: white;
+    height: 80px;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 50px;
+    padding-top: 10px;
+    color: rgb(241, 143, 1);
+
+}
+
+/**accordion****************************/
+
+.sessions {
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.accordion {
+    width: 50%;
+}
+
+.sessions h2 {
+    color: rgb(228, 255, 26);
+    text-align: center;
+}
+
+.sessions a {
+    text-decoration: none;
+    color: rgb(228, 255, 26);
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.sessions a:hover {
+    opacity: 0.7;
+}
+
+.accordion-item {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordion-button {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/**DOCUMENT CLASSES****************************/
+
+.intro {
+    text-align: start;
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/nacho.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.intro h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    background-color: black;
+    padding: 0 10px 0 10px;
+}
+
+/**Schedule****************************/
+
+.schedule {
+    background-color: white;
+    height: 300px;
+}
+
+.table {
+    height: 300px;
+    empty-cells: show;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+}
+
+.table thead tr th {
+    background-color: rgb(241, 143, 1);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.table tbody tr th {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.table tbody tr td {
+    font-size: 20px;
+}
+
+.pads {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.pads div {
+    width: 50%;
+}
+
+.pads div h2 {
+    color: rgb(241, 143, 1);
+    font-size: 50px;
+}
+
+.pads div p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.pads div video {
+    width: 100%;
+    padding: 15px;
+    
+    
+}
+
+
+.adress {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.adress div h2 {
+    font-size: 40px;
+    background-color: white;
+    color: black;
+}
+
+.gym {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gym div h3 {
+    color: rgb(241, 143, 1);
+    font-size: 20px;
+}
+
+.adress div a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 5px 0 5px;
+    margin-top: 10px;
+}
+
+.adress div a:hover {
+    color: rgb(241, 143, 1);
+}
+
+/**DOCUMENT CONTACT****************************/
+.row {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+/**FOOTER****************************/
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+footer form h2 {
+    font-size: 25px;
+}
+
+footer form div {
+    font-family: 'Poppins', sans-serif;
+}
+
+.media a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.media a:hover {
+    color: rgb(228, 255, 26);
+}
+
+/*MEDIA QUERY************/
+
+@media screen and (max-width: 1039px) {
+    .hero div h2 {
+        font-size: 50px;
+    }
+
+    .hero div p {
+        font-size: 30px;
+    }
+
+    .beggining{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 859px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero div h2 {
+        padding-top: 30px;
+    }
+
+    .hero div img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:815px){
+    .pads{
+        flex-direction: column-reverse;
+    }
+
+    .grid-galeria{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 400px;
+    }
+
+    .img-5{
+        grid-column: span 1;
+    }
+
+}
+
+@media screen and (max-width: 775px) {
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stats h2 {
+        font-size: 50px;
+    }
+
+
+    .stats div span {
+        font-size: 60px;
+    }
+
+    .span-grid {
+        grid-column: span 2;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about div h2 {
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    .about div p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    .about a {
+        font-size: 20px;
+    }
+
+    .about img {
+        height: 250px;
+
+    }
+
+    .row{
+        padding-left:10px;
+    }
+}
+
+@media screen and (max-width: 591px) {
+    .hero div h2 {
+        font-size: 40px;
+    }
+
+    .hero div p {
+        font-size: 25px;
+
+    }
+
+    .about {
+        background-image: url(../img/about-index.JPG);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 300px;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .grid-galeria{
+        grid-auto-rows: 300px;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+    }
+
+    .stats h2 {
+        font-size: 35px;
+    }
+
+    .stats div h3 {
+        font-size: 30px;
+    }
+
+    .stats div span {
+        font-size: 40px;
+    }
+
+    .banner {
+        height: 50px;
+    }
+
+    .banner div h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:438px){
+    .about div p{
+        font-size: 13px;
+    }
+
+    .about div a{
+        font-size: 15px;
+    }
+
+    footer div h2{
+        font-size: 15px;
+    }
+
+    footer form div{
+        font-size: 10px;
+    }
+    .media a{
+        font-size: 20px;
+        padding-right: 5px;
+    }
+}
