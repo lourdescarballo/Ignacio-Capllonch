@@ -269,11 +269,6 @@ body {
 
 /**Schedule****************************/
 
-.schedule {
-    background-color: white;
-    height: 300px;
-}
-
 .table {
     height: 300px;
     empty-cells: show;
@@ -460,6 +455,13 @@ footer form div {
         grid-column: span 1;
     }
 
+    .section table{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 775px) {
@@ -469,6 +471,7 @@ footer form div {
 
     .stats h2 {
         font-size: 50px;
+
     }
 
 
@@ -501,12 +504,15 @@ footer form div {
 
     .about img {
         height: 250px;
-
     }
 
     .row{
         padding-left:10px;
     }
+}
+
+@media screen and (max-width: 615px){
+    
 }
 
 @media screen and (max-width: 591px) {
