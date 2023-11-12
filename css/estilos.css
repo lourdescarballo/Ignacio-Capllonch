@@ -1,0 +1,459 @@
+/**Variables y listas****************************/
+/**Mixins****************************/
+/**RESET****************************/
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Teko', sans-serif;
+  background-color: black; }
+
+/**BOOTSTRAP****************************/
+.navbar {
+  background-color: black; }
+
+.navbar-brand {
+  text-decoration: none;
+  font-size: 30px;
+  color: #e4ff1a;
+  padding: 0 10px 0 10px; }
+
+.nav-link {
+  color: white;
+  font-size: 20px; }
+
+.nav-link:hover {
+  color: #e4ff1a; }
+
+.accordion-item {
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif; }
+
+.accordion-button {
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif; }
+
+.accordion {
+  width: 50%; }
+
+/**Galeria con grid****************************/
+.grid-galeria {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 450px;
+  gap: 20px;
+  padding: 5px 10px 5px 10px; }
+
+.grid-galeria div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.img-5 {
+  grid-column: span 2; }
+
+header div .media a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-right: 10px; }
+  header div .media a:hover {
+    color: #e4ff1a; }
+
+/**INDEX****************************/
+.hero {
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 700px;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; }
+  .hero div h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 70px; }
+  .hero div p {
+    color: #f18f01;
+    font-size: 40px; }
+  .hero div a {
+    text-decoration: none;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px; }
+    .hero div a:hover {
+      opacity: 0.7;
+      color: black; }
+
+.stats {
+  background-color: black;
+  height: 160px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); }
+  .stats h2 {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .stats div {
+    font-family: 'Teko', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .stats div h3 span {
+      font-size: 70px;
+      color: #e4ff1a;
+      font-family: 'Teko', sans-serif; }
+
+.about {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  text-align: left; }
+  .about div img {
+    height: 500px;
+    padding-right: 15px; }
+  .about div h2 {
+    font-size: 50px; }
+  .about div p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .about div a {
+    text-decoration: none;
+    background-color: black;
+    color: #e4ff1a;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 0 10px 0 10px; }
+    .about div a:hover {
+      opacity: 0.7; }
+
+.banner {
+  background-color: white;
+  height: 80px;
+  text-align: center; }
+  .banner div a {
+    text-decoration: none; }
+  .banner div h2 {
+    font-size: 50px;
+    padding-top: 10px;
+    color: #f18f01;
+    transition: 1s; }
+    .banner div h2:hover {
+      text-shadow: 3px 5px 4px rgba(123, 117, 117, 0.77); }
+
+.sessions {
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .sessions div h2 {
+    color: #e4ff1a;
+    text-align: center; }
+  .sessions div a {
+    text-decoration: none;
+    color: #e4ff1a;
+    border-radius: 5px;
+    font-size: 20px; }
+    .sessions div a:hover {
+      opacity: 0.7; }
+
+/**About me****************************/
+.container-fluid div h2 {
+  color: #e4ff1a;
+  font-family: 'Teko', sans-serif;
+  font-size: 40px; }
+
+/**Classes****************************/
+.intro {
+  text-align: start;
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/nacho.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; }
+  .intro h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    background-color: black;
+    padding: 0 10px 0 10px; }
+
+.table {
+  height: 300px;
+  empty-cells: show;
+  text-align: center;
+  font-family: 'Teko', sans-serif; }
+  .table thead tr th {
+    background-color: #f18f01;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; }
+  .table tbody tr th {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif; }
+  .table tbody td {
+    font-size: 20px; }
+
+.schedule-mobile {
+  display: none; }
+
+.pads {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left; }
+  .pads div {
+    width: 50%; }
+    .pads div video {
+      width: 100%;
+      padding: 15px; }
+    .pads div h2 {
+      color: #f18f01;
+      font-size: 50px; }
+    .pads div p {
+      font-family: 'Poppins', sans-serif; }
+
+.benefits {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px; }
+  .benefits div {
+    padding: 5px; }
+    .benefits div p {
+      color: white;
+      font-size: 25px; }
+
+.adress {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px; }
+  .adress div h2 {
+    font-size: 40px;
+    background-color: white;
+    color: black; }
+  .adress div a {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 5px 0 5px;
+    margin-top: 10px; }
+    .adress div a:hover {
+      color: #f18f01; }
+  .adress .gym {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; }
+    .adress .gym div h3 {
+      color: #f18f01;
+      font-size: 20px; }
+
+/**Contact****************************/
+.row {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+  width: 100%; }
+
+footer div {
+  font-family: 'Poppins', sans-serif; }
+
+/**Media Query****************************/
+@media screen and (max-width: 1039px) {
+  .hero div h2 {
+    font-size: 50px; }
+  .hero div p {
+    font-size: 30px; }
+  .beggining {
+    flex-direction: column-reverse; } }
+
+@media screen and (max-width: 859px) {
+  .hero {
+    flex-direction: column; }
+    .hero div h2 {
+      padding-top: 30px; }
+    .hero div img {
+      width: 70%; } }
+
+@media screen and (max-width: 815px) {
+  .pads {
+    flex-direction: column-reverse; }
+  .grid-galeria {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 400px; }
+  .img-5 {
+    grid-column: span 1; }
+  .section table {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column; } }
+
+@media screen and (max-width: 775px) {
+  .stats {
+    grid-template-columns: repeat(3, 1fr); }
+    .stats h2 {
+      font-size: 50px; }
+    .stats div span {
+      font-size: 60px; }
+  .span-grid {
+    grid-column: span 2; }
+  .about {
+    flex-direction: column-reverse; }
+    .about div h2 {
+      font-size: 30px;
+      padding-left: 10px; }
+    .about div p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      padding-left: 10px; }
+    .about div a {
+      font-size: 20px; }
+    .about div img {
+      height: 250px; }
+  .row {
+    padding-left: 10px; }
+  .benefits {
+    width: 100%;
+    flex-direction: column;
+    height: 350px;
+    text-align: center; } }
+
+@media screen and (max-width: 615px) {
+  .intro {
+    height: 350px; }
+  .table {
+    display: none; }
+  .schedule-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    flex-wrap: wrap; }
+    .schedule-mobile div div button {
+      font-size: 30px;
+      background-color: white;
+      color: black;
+      border: solid 2px black;
+      border-radius: 10px;
+      font-family: 'Teko', sans-serif;
+      padding: 5px 10px 5px 10px;
+      transition: 0.5; }
+      .schedule-mobile div div button:hover {
+        color: #e4ff1a;
+        background-color: #f18f01; }
+    .schedule-mobile div div ul li {
+      font-family: 'Poppins', sans-serif; } }
+
+@media screen and (max-width: 591px) {
+  .hero div h2 {
+    font-size: 40px;
+    background-color: black; }
+  .hero div p {
+    font-size: 25px; }
+  .about {
+    background: linear-gradient(rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0)), url(../img/about-index.JPG);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 250px; }
+    .about img {
+      display: none; }
+    .about div h2 {
+      background-color: black;
+      width: 100px;
+      padding-left: 5px;
+      text-align: start; }
+    .about div p {
+      background-color: black; }
+  .grid-galeria {
+    grid-auto-rows: 300px; }
+  .sessions {
+    height: 350px; }
+    .sessions .accordion {
+      width: 100%;
+      padding: 0 5px 0 5px; }
+    .sessions .accordion-item {
+      font-size: 13px; }
+    .sessions .accordion-button {
+      font-size: 13px; } }
+
+@media screen and (max-width: 449px) {
+  .stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px; }
+    .stats h2 {
+      font-size: 35px; }
+    .stats div h3 {
+      font-size: 30px; }
+      .stats div h3 span {
+        font-size: 40px; }
+  .banner {
+    height: 50px; }
+    .banner div h2 {
+      font-size: 30px; }
+  .about div p {
+    font-size: 13px; }
+  .about div a {
+    font-size: 15px; }
+  .schedule-mobile div div button {
+    margin-top: 15px;
+    font-size: 25px; }
+  .pads div video {
+    display: none; }
+  .pads div h2 {
+    font-size: 40px; }
+  .benefits div p {
+    font-size: 20px; }
+  .adress div iframe {
+    height: 200px; } }

@@ -1,0 +1,13 @@
+/**Variables y listas****************************/
+$colors:
+black,
+white,
+rgb(241, 143, 1),
+rgb(228, 255, 26);
+
+/**Mixins****************************/
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

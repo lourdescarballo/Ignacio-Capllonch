@@ -56,17 +56,17 @@ body {
 }
 
 
-.hero h2 {
+.hero div h2 {
     font-family: 'Teko', sans-serif;
     font-size: 70px;
 }
 
-.hero p {
+.hero div p {
     color: rgb(241, 143, 1);
     font-size: 40px;
 }
 
-.hero a {
+.hero div a {
     text-decoration: none;
     font-size: 15px;
     background-color: white;
@@ -320,8 +320,6 @@ body {
 .pads div video {
     width: 100%;
     padding: 15px;
-    
-    
 }
 
 
@@ -471,9 +469,7 @@ footer form div {
 
     .stats h2 {
         font-size: 50px;
-
     }
-
 
     .stats div span {
         font-size: 60px;
@@ -498,7 +494,7 @@ footer form div {
         padding-left: 10px;
     }
 
-    .about a {
+    .about div a {
         font-size: 20px;
     }
 
@@ -518,11 +514,11 @@ footer form div {
 @media screen and (max-width: 591px) {
     .hero div h2 {
         font-size: 40px;
+        background-color: black;
     }
 
     .hero div p {
         font-size: 25px;
-
     }
 
     .about {
@@ -535,6 +531,13 @@ footer form div {
 
     .about img {
         display: none;
+    }
+
+    .about div h2{
+        background-color: black;
+        width: 150px;
+        padding-left: 10px;
+        text-align: center;
     }
 
     .grid-galeria{
@@ -570,9 +573,24 @@ footer form div {
     .banner div h2{
         font-size: 30px;
     }
-}
 
-@media screen and (max-width:438px){
+    .sessions{
+        height: 350px;
+    }
+
+    .accordion{
+        width: 100%;
+        padding: 0 5px 0 5px;
+    }
+
+    .accordion-item{
+        font-size: 13px;
+    }
+
+    .accordion-button{
+        font-size: 13px;
+    }
+
     .about div p{
         font-size: 13px;
     }
@@ -592,4 +610,6 @@ footer form div {
         font-size: 20px;
         padding-right: 5px;
     }
+
 }
+

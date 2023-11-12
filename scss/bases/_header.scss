@@ -1,0 +1,19 @@
+header{
+    div{
+        .media{
+            a {
+                text-decoration: none;
+                color: nth($colors, 2);
+                font-size: 20px;
+                padding-right: 10px;
+    
+                &:hover {
+                    color: nth($colors, 4);
+                }
+    
+            }
+
+        }
+    }
+}
+
